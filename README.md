@@ -49,12 +49,12 @@ _note: follow [this setup](https://github.com/hortinstein/node-dash-button#insta
 
 I configured the dash button as [binary sensor](https://home-assistant.io/components/binary_sensor/) in [Home Assistant](https://home-assistant.io/). This is an example piece of text for `configuration.yaml`.
 
-    ```
-     binary_sensor:
-      - platform: mqtt
-        name: "Nerf supply is out"
-        state_topic: "dash/nerf_supply"
-        payload_on: 'active'
-        payload_off: 'inactive'
-        device_class: 'occupancy'
-    ```
+```
+  binary_sensor:
+   - platform: mqtt
+     name: "Nerf supply is out"
+     state_topic: "dash/nerf_supply"
+     payload_on: 'active'
+     payload_off: 'inactive'
+     device_class: 'occupancy'
+```
